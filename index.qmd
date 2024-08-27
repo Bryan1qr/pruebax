@@ -1,0 +1,23 @@
+---
+title: "Untitled"
+format: dashboard
+editor_options: 
+  chunk_output_type: console
+---
+```{r}
+library(highcharter)
+library(tidyverse)
+library(zoo)
+
+source("Scripts/ECA.R")
+
+df <- ECA(meteo = "input/CR1000_AGOSTO_2024.csv",
+    gases = "input/gases_odria_agosto.csv",
+    pm = "input/pm_agosto_odria.csv",
+    fecha_inicio = "2024-08-08",
+    fecha_fin = "2024-08-18",
+    tipo = "lista", estacion = "Odría")
+
+head(df$df)
+```
+
