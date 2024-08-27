@@ -18,6 +18,12 @@ df <- ECA(meteo = "input/CR1000_AGOSTO_2024.csv",
     fecha_fin = "2024-08-18",
     tipo = "lista", estacion = "Odría")
 
-head(df$df)
+highchart() %>%
+  hc_add_series(data = list_parse2(
+    df$df %>% mutate(
+      date = as.numeric(date)*1000)%>% 
+      select(date, pm10)), 
+    type = "line", name = "PM10") %>%
+  hc_xAxis(type = "datetime") 
 ```
 

@@ -41,6 +41,94 @@ ul.task-list li input[type="checkbox"] {
 <script src="index_files/libs/quarto-dashboard/web-components.js" type="module"></script>
 <script src="index_files/libs/quarto-dashboard/components.js"></script>
 <link href="index_files/libs/quarto-dashboard/datatables.min.css" rel="stylesheet" kdttablesentinel="true">
+<link href="index_files/libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="index_files/libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="index_files/libs/jquery-3.5.1/jquery.min.js"></script>
+
+<script src="index_files/libs/proj4js-2.3.15/proj4.js"></script>
+
+<link href="index_files/libs/highcharts-9.3.1/css/motion.css" rel="stylesheet">
+
+<script src="index_files/libs/highcharts-9.3.1/highcharts.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/highcharts-3d.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/highcharts-more.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/stock.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/map.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/data.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/exporting.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/offline-exporting.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/drilldown.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/item-series.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/overlapping-datalabels.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/annotations.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/export-data.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/funnel.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/heatmap.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/treemap.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/sankey.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/dependency-wheel.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/organization.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/solid-gauge.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/streamgraph.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/sunburst.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/vector.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/wordcloud.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/xrange.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/tilemap.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/venn.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/gantt.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/timeline.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/parallel-coordinates.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/bullet.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/coloraxis.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/dumbbell.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/lollipop.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/series-label.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/plugins/motion.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/custom/reset.js"></script>
+
+<script src="index_files/libs/highcharts-9.3.1/modules/boost.js"></script>
+
+<script src="index_files/libs/highchart-binding-0.9.4/highchart.js"></script>
+
 
 
 </head>
@@ -71,21 +159,9 @@ ul.task-list li input[type="checkbox"] {
 <div class="bslib-grid-item html-fill-item bslib-grid" data-layout="fill" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
 <div class="card cell bslib-card html-fill-container" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
 <div class="card-body html-fill-item html-fill-container">
-<div class="cell-output cell-output-stdout html-fill-item html-fill-container">
-<pre><code>                 date     hr     pm25     pm10     pres pp  temp  wd    ws rad
-1 2024-08-08 00:00:00 81.800  0.00000  9.47533 939.9034  0 11.15   2 1.003   0
-2 2024-08-08 01:00:00 81.846  0.00000  8.71533 939.1799  0 11.04 188 0.940   0
-3 2024-08-08 02:00:00 82.780       NA       NA 938.7064  0 10.79 326 1.155   0
-4 2024-08-08 03:00:00 82.942  0.00000 10.51040 938.4227  0 10.74 148 0.893   0
-5 2024-08-08 04:00:00 83.191  1.13031 15.22190 937.9240  0 10.48 113 1.079   0
-6 2024-08-08 05:00:00 83.467 20.06020 30.52130 937.6682  0 10.27 189 1.026   0
-         no      no2      so2      h2s       co       o3     co_1
-1 0.8454422 19.02999 4.104603 1.495982 228.6369       NA       NA
-2 0.8050053 16.04021 4.112984 1.438153 231.3422       NA       NA
-3 0.6878111 15.76130 3.616755 2.399205 216.0722       NA       NA
-4 0.8021767 16.64133 3.593045 3.435537 226.4192       NA       NA
-5 1.0379177 18.21461 3.652757 3.603982 242.1864       NA       NA
-6 1.4569738 18.16732 3.826754 4.053569 235.8253 25.05664 230.0804</code></pre>
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="highchart html-widget html-fill-item html-fill-container" id="htmlwidget-98bc5b1fa4c59363dc68" style="width:100%;height:406px;"></div>
+<script type="application/json" data-for="htmlwidget-98bc5b1fa4c59363dc68">{"x":{"hc_opts":{"chart":{"reflow":true},"title":{"text":null},"yAxis":{"title":{"text":null}},"credits":{"enabled":false},"exporting":{"enabled":false},"boost":{"enabled":false},"plotOptions":{"series":{"label":{"enabled":false},"turboThreshold":0},"treemap":{"layoutAlgorithm":"squarified"}},"series":[{"data":[[1723075200000,9.47533],[1723078800000,8.71533],[1723082400000,null],[1723086000000,10.5104],[1723089600000,15.2219],[1723093200000,30.5213],[1723096800000,31.5867],[1723100400000,36.0986],[1723104000000,36.5204],[1723107600000,39.6207],[1723111200000,40.3974],[1723114800000,38.4829],[1723118400000,40.4572],[1723122000000,43.6827],[1723125600000,42.1439],[1723129200000,27.7268],[1723132800000,40.5604],[1723136400000,27.4099],[1723140000000,23.7551],[1723143600000,21.1361],[1723147200000,18.7164],[1723150800000,25.8225],[1723154400000,26.6702],[1723158000000,35.8359],[1723161600000,52.7718],[1723165200000,35.3618],[1723168800000,43.0479],[1723172400000,42.9612],[1723176000000,39.6996],[1723179600000,42.0217],[1723183200000,29.5718],[1723186800000,38.3896],[1723190400000,48.9289],[1723194000000,57.3111],[1723197600000,61.1236],[1723201200000,46.181],[1723204800000,63.1981],[1723208400000,65.2885],[1723212000000,54.5286],[1723215600000,59.9296],[1723219200000,40.5369],[1723222800000,29.1737],[1723226400000,28.0232],[1723230000000,36.0792],[1723233600000,32.8426],[1723237200000,20.8022],[1723240800000,33.7138],[1723244400000,39.9197],[1723248000000,41.6279],[1723251600000,38.9236],[1723255200000,40.5806],[1723258800000,49.0036],[1723262400000,40.4061],[1723266000000,36.2948],[1723269600000,29.0462],[1723273200000,36.8945],[1723276800000,54.7461],[1723280400000,65.2604],[1723284000000,63.9602],[1723287600000,86.295],[1723291200000,51.1198],[1723294800000,43.6816],[1723298400000,44.3416],[1723302000000,52.4195],[1723305600000,45.3621],[1723309200000,31.0345],[1723312800000,28.8007],[1723316400000,29.2135],[1723320000000,30.8376],[1723323600000,34.2776],[1723327200000,42.0326],[1723330800000,48.2212],[1723334400000,52.343],[1723338000000,43.1554],[1723341600000,63.3163],[1723345200000,45.3917],[1723348800000,50.0735],[1723352400000,23.8342],[1723356000000,35.8378],[1723359600000,55.0216],[1723363200000,57.4166],[1723366800000,66.1464],[1723370400000,78.2039],[1723374000000,60.3363],[1723377600000,47.5785],[1723381200000,43.99],[1723384800000,37.4374],[1723388400000,39.7047],[1723392000000,30.827],[1723395600000,29.1555],[1723399200000,24.1568],[1723402800000,23.4038],[1723406400000,27.819],[1723410000000,37.3643],[1723413600000,42.4058],[1723417200000,37.4849],[1723420800000,41.0084],[1723424400000,43.0192],[1723428000000,53.7051],[1723431600000,44.0607],[1723435200000,32.776],[1723438800000,36.9486],[1723442400000,35.4127],[1723446000000,48.8748],[1723449600000,56.4416],[1723453200000,72.70399999999999],[1723456800000,49.3647],[1723460400000,46.7909],[1723464000000,45.1314],[1723467600000,38.8279],[1723471200000,39.9282],[1723474800000,47.2076],[1723478400000,47.3835],[1723482000000,38.0406],[1723485600000,38.6155],[1723489200000,29.324],[1723492800000,42.1282],[1723496400000,40.5153],[1723500000000,33.0037],[1723503600000,45.7201],[1723507200000,41.0278],[1723510800000,30.7356],[1723514400000,35.4489],[1723518000000,41.902],[1723521600000,35.1135],[1723525200000,36.9005],[1723528800000,41.356],[1723532400000,46.3784],[1723536000000,53.4646],[1723539600000,81.8968],[1723543200000,81.5137],[1723546800000,79.14360000000001],[1723550400000,81.60599999999999],[1723554000000,52.6978],[1723557600000,52.3104],[1723561200000,60.547],[1723564800000,50.4598],[1723568400000,38.2783],[1723572000000,41.2615],[1723575600000,39.6335],[1723579200000,30.9449],[1723582800000,34.6537],[1723586400000,42.2118],[1723590000000,28.0893],[1723593600000,43.5146],[1723597200000,40.0893],[1723600800000,40.2781],[1723604400000,40.8382],[1723608000000,37.0246],[1723611600000,39.2016],[1723615200000,39.9375],[1723618800000,56.7102],[1723622400000,60.9434],[1723626000000,71.01439999999999],[1723629600000,108.093],[1723633200000,98.0064],[1723636800000,48.7663],[1723640400000,43.8117],[1723644000000,49.1776],[1723647600000,67.9693],[1723651200000,84.5556],[1723654800000,104.382],[1723658400000,44.786],[1723662000000,42.7809],[1723665600000,41.2635],[1723669200000,44.3063],[1723672800000,49.3121],[1723676400000,38.7962],[1723680000000,33.6802],[1723683600000,43.1236],[1723687200000,52.1375],[1723690800000,56.6904],[1723694400000,54.0205],[1723698000000,42.4391],[1723701600000,23.0755],[1723705200000,11.7529],[1723708800000,15.9307],[1723712400000,24.652],[1723716000000,43.9925],[1723719600000,38.8549],[1723723200000,40.2501],[1723726800000,30.3566],[1723730400000,48.9084],[1723734000000,51.9802],[1723737600000,50.4828],[1723741200000,70.0915],[1723744800000,39.5388],[1723748400000,32.9882],[1723752000000,31.7704],[1723755600000,38.9735],[1723759200000,20.1412],[1723762800000,21.4466],[1723766400000,33.6731],[1723770000000,29.6925],[1723773600000,37.5877],[1723777200000,26.417],[1723780800000,21.7604],[1723784400000,21.5789],[1723788000000,43.4167],[1723791600000,41.1929],[1723795200000,49.0096],[1723798800000,76.78060000000001],[1723802400000,109.474],[1723806000000,54.6384],[1723809600000,48.2093],[1723813200000,62.8461],[1723816800000,64.563],[1723820400000,43.229],[1723824000000,47.6065],[1723827600000,58.9014],[1723831200000,41.4306],[1723834800000,34.5493],[1723838400000,36.8142],[1723842000000,34.8542],[1723845600000,25.9163],[1723849200000,32.3525],[1723852800000,44.4004],[1723856400000,54.0738],[1723860000000,51.9491],[1723863600000,43.9167],[1723867200000,50.4182],[1723870800000,49.1053],[1723874400000,50.965],[1723878000000,65.04510000000001],[1723881600000,72.8259],[1723885200000,58.6309],[1723888800000,56.4697],[1723892400000,63.8348],[1723896000000,52.0044],[1723899600000,47.3279],[1723903200000,41.6523],[1723906800000,38.1166],[1723910400000,39.737],[1723914000000,30.2876],[1723917600000,32.7079],[1723921200000,18.4828],[1723924800000,25.9232],[1723928400000,43.5733],[1723932000000,37.7564],[1723935600000,43.3263],[1723939200000,44.1403],[1723942800000,58.4278],[1723946400000,38.2544],[1723950000000,34.2549],[1723953600000,38.8191],[1723957200000,34.7195],[1723960800000,42.64],[1723964400000,45.3902],[1723968000000,69.9024],[1723971600000,88.2367],[1723975200000,69.03019999999999],[1723978800000,61.0424],[1723982400000,50.9871],[1723986000000,46.6203],[1723989600000,46.6128],[1723993200000,43.7702],[1723996800000,39.1339],[1724000400000,32.0906],[1724004000000,29.954],[1724007600000,30.6161],[1724011200000,31.3226],[1724014800000,27.7641],[1724018400000,36.1869],[1724022000000,32.8111]],"type":"line","name":"PM10"}],"xAxis":{"type":"datetime"}},"theme":{"chart":{"backgroundColor":"transparent"},"colors":["#7cb5ec","#434348","#90ed7d","#f7a35c","#8085e9","#f15c80","#e4d354","#2b908f","#f45b5b","#91e8e1"]},"conf_opts":{"global":{"Date":null,"VMLRadialGradientURL":"http =//code.highcharts.com/list(version)/gfx/vml-radial-gradient.png","canvasToolsURL":"http =//code.highcharts.com/list(version)/modules/canvas-tools.js","getTimezoneOffset":null,"timezoneOffset":0,"useUTC":true},"lang":{"contextButtonTitle":"Chart context menu","decimalPoint":".","downloadCSV":"Download CSV","downloadJPEG":"Download JPEG image","downloadPDF":"Download PDF document","downloadPNG":"Download PNG image","downloadSVG":"Download SVG vector image","downloadXLS":"Download XLS","drillUpText":"◁ Back to {series.name}","exitFullscreen":"Exit from full screen","exportData":{"annotationHeader":"Annotations","categoryDatetimeHeader":"DateTime","categoryHeader":"Category"},"hideData":"Hide data table","invalidDate":null,"loading":"Loading...","months":["January","February","March","April","May","June","July","August","September","October","November","December"],"noData":"No data to display","numericSymbolMagnitude":1000,"numericSymbols":["k","M","G","T","P","E"],"printChart":"Print chart","resetZoom":"Reset zoom","resetZoomTitle":"Reset zoom level 1:1","shortMonths":["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],"shortWeekdays":["Sat","Sun","Mon","Tue","Wed","Thu","Fri"],"thousandsSep":" ","viewData":"View data table","viewFullscreen":"View in full screen","weekdays":["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]}},"type":"chart","fonts":[],"debug":false},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
