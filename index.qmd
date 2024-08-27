@@ -27,3 +27,4 @@ highchart() %>%
   hc_xAxis(type = "datetime") 
 ```
 
+Hola
