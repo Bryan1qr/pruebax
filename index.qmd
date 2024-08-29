@@ -19,12 +19,14 @@ df <- ECA(meteo = "input/CR1000_AGOSTO_2024.csv",
     tipo = "lista", estacion = "Odría")
 
 highchart() %>%
+  hc_chart(zoomType = "x") %>% 
   hc_add_series(data = list_parse2(
     df$df %>% mutate(
       date = as.numeric(date)*1000)%>% 
       select(date, pm10)), 
     type = "line", name = "PM10") %>%
-  hc_xAxis(type = "datetime") 
+  hc_xAxis(type = "datetime") %>% 
+  hc_exporting(enabled = TRUE) 
 ```
 
 Hola
